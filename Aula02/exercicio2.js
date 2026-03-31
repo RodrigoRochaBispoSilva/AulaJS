@@ -1,9 +1,11 @@
-document.write("<h1>Aula 02 - Exercicio 2</h1>");
+function Exemplo2()
 
-var fah = prompt("Digite a temperatura em fahrenheit:");
+{
+let numero = Number(document.getElementById("numero").value);
 
-var tcelsius = ((Number(fahrenheit) - 32) * 5) / 9
+let tCelsius;
 
-document.write("A temperatura em celsius e: " + tcelsius)
+tCelsius = numero - 32 * 5 / 9;
 
-document.getElementById("resultado").innerHTML = "<p>O quadrado do numero e " + quadrado + " e o cubo e " + cubo + "</p>";
+document.getElementById("resultado").innerHTML = "<p>A temperatura em Celsius e: " + tCelsius + "</p>";
+}
